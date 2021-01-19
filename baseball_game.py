@@ -293,15 +293,24 @@ def main():
     # 위의 코드를 포함하여 자유로운 수정이 가능함
         while user_input!=random_number:
             user_input=input('Input guess number : ')
-            while is_validated_number(user_input)==False:
+            if user_input=='0':
+                return
+
+            while is_validated_number(user_input)==False:# 이반복문안에서만 돌아가는 상황
                 print('Wrong Input, Input again')
-                user_input = input('Input guess number : ')
+                user_input = input('Input guess number : ')# 오류뜨는부분
+                if user_input =='0':
+                    return 
             temp=get_strikes_or_ball(user_input,random_number)
             print(f'Strikes : {temp[0]} , Balls : {temp[1]}')
         answer=input('You win, one more(Y/N) ?')
+        if answer=='0':
+            return 
         while is_yes(answer)==False and is_no(answer)==False:
             print('Wrong input, Input again')
             answer=input('You win, one more(Y/N) ?')
+            if answer=='0':
+                return 
         if is_no(answer)==True:
             flag=True
     # ==================================
