@@ -302,11 +302,8 @@ def main():
         while is_yes(answer)==False and is_no(answer)==False:
             print('Wrong input, Input again')
             answer=input('You win, one more(Y/N) ?')
-        if is_yes(answer)==True:
-            continue
         if is_no(answer)==True:
             flag=True
-            break
     # ==================================
     print("Thank you for using this program")
     print("End of the Game")
