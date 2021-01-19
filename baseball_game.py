@@ -130,7 +130,7 @@ def is_validated_number(user_input_number):
         return False
     if is_between_100_and_999(result)==False:
         return False
-    if is_duplicated_number(result)==False:
+    if is_duplicated_number(result)==True:
         return False
 
     # ==================================
