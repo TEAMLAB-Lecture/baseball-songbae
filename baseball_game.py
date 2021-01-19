@@ -96,7 +96,7 @@ def is_duplicated_number(three_digit):
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
     result = False
     x=str(three_digit)
-    if x[0]==x[1] or x[0]==x[1] or x[1]==x[2]:
+    if x[0]==x[1] or x[0]==x[2] or x[1]==x[2]:
         return True
     # ==================================
     return result
