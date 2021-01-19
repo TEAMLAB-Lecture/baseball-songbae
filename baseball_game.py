@@ -295,7 +295,7 @@ def main():
             user_input=input('Input guess number : ')
             while is_validated_number(user_input)==False:
                 print('Wrong Input, Input again')
-                user_input=input('Input guess number : ',)
+                user_input=input('Input guess number : ')
             temp=get_strikes_or_ball(user_input,random_number)
             print(f'Strikes : {temp[0]} , Balls : {temp[1]}')
         answer=input('You win, one more(Y/N) ?')
