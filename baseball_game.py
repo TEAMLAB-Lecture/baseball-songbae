@@ -300,7 +300,8 @@ def main():
             print(f'Strikes : {temp[0]} , Balls : {temp[1]}')
         answer=input('You win, one more(Y/N) ?')
         while is_yes(answer)==False and is_no(answer)==False:
-            answer=input()
+            print('Wrong input, Input again')
+            answer=input('You win, one more(Y/N) ?')
         if is_yes(answer)==True:
             continue
         if is_no(answer)==True:
