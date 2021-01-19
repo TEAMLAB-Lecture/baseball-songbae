@@ -164,7 +164,7 @@ def get_not_duplicated_three_digit_number():
         if is_duplicated_number(result)==False:
             break
     # ==================================
-    return result
+    return int(result)
 
 
 def get_strikes_or_ball(user_input_number, random_number):
